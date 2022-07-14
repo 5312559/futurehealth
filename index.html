@@ -16,18 +16,27 @@
             display: block;
         }
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+    <script>
+    $(document).ready(function(e) {
+        $('img[usemap]').rwdImageMaps();
+    });
+    </script>
 </head>
 <body>
     <div id="imgArea">
-        <img src="img/p1.png" usemap="#image-map">
-        <map name="image-map">
-            <area target="_blank" alt="사전 온라인 참가 등록" title="사전 온라인 참가 등록" href="http://www.test.com/" coords="492,862,176,796" shape="rect">
-            <area target="_blank" alt="유튜브 채널 바로가기" title="유튜브 채널 바로가기" href="http://www.test.com/" coords="539,796,855,862" shape="rect">
+        <img src="img/p1.png" usemap="#image-map1" />
+        <map name="image-map1">
+            <area target="_blank" alt="사전 온라인 참가 등록" title="사전 온라인 참가 등록" href="http://www.naver.com/" coords="492,862,176,796" shape="rect">
+            <area target="_blank" alt="유튜브 채널 바로가기" title="유튜브 채널 바로가기" href="http://www.naver.com/" coords="539,796,855,862" shape="rect">
         </map>
-
         <img src="img/p2.png" />
         <img src="img/p3.png" />
-        <img src="img/p4.png" />
+        <img src="img/p4.png" usemap="#image-map4" />
+        <map name="image-map4">
+            <area target="_blank" alt="사전 온라인 참가 등록" title="사전 온라인 참가 등록" href="http://www.naver.com/" coords="251,1264,773,1370" shape="rect">
+        </map>
     </div>
 </body>
 </html>
