@@ -10,6 +10,13 @@
             margin: 0;
             padding: 0;
         }
+
+        html {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
         
         img {
             width: 100%;
@@ -22,6 +29,10 @@
     $(document).ready(function(e) {
         $('img[usemap]').rwdImageMaps();
     });
+
+    $(document).bind("contextmenu", function(e) {
+        return false;
+     });
     </script>
 </head>
 <body>
